@@ -1,0 +1,11 @@
+pipeline {
+    agent any 
+        stages {
+            stage ('Run script') {
+                steps {
+                    sh " tar cvf file.tar Hello.sh "
+                        }
+                  }
+        
+        }
+}
